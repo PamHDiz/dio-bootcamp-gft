@@ -13,6 +13,7 @@ public class Ex2_Consoantes {
 		Scanner scan = new Scanner(System.in);
 		
 		String[] caracteres = new String[6];
+		int totalConsoantes = 0;
 		
 		
 		for (int i = 0; i < caracteres.length; i++) {
@@ -27,8 +28,10 @@ public class Ex2_Consoantes {
 					caracteres[i].equalsIgnoreCase("o") | 
 					caracteres[i].equalsIgnoreCase("u"))) {
 				System.out.println("Contoante: " + caracteres[i]);
+				totalConsoantes++;
 		}
 	}
+		System.out.println("Total de consoantes: " + totalConsoantes);
 
 }
 }
